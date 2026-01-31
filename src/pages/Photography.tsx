@@ -2,22 +2,20 @@ import { useState } from "react";
 import Lightbox from "../components/Lightbox";
 import Navigation from "../components/Navigation";
 
-// Placeholder photos - replace with your actual photos
-const photos = [
-  { id: 1, src: "https://picsum.photos/seed/1/800/600", alt: "Photo 1", category: "landscape" },
-  { id: 2, src: "https://picsum.photos/seed/2/800/600", alt: "Photo 2", category: "street" },
-  { id: 3, src: "https://picsum.photos/seed/3/800/600", alt: "Photo 3", category: "portrait" },
-  { id: 4, src: "https://picsum.photos/seed/4/800/600", alt: "Photo 4", category: "landscape" },
-  { id: 5, src: "https://picsum.photos/seed/5/800/600", alt: "Photo 5", category: "street" },
-  { id: 6, src: "https://picsum.photos/seed/6/800/600", alt: "Photo 6", category: "portrait" },
-  { id: 7, src: "https://picsum.photos/seed/7/800/600", alt: "Photo 7", category: "landscape" },
-  { id: 8, src: "https://picsum.photos/seed/8/800/600", alt: "Photo 8", category: "street" },
-  { id: 9, src: "https://picsum.photos/seed/9/800/600", alt: "Photo 9", category: "portrait" },
-  { id: 10, src: "https://picsum.photos/seed/10/800/600", alt: "Photo 10", category: "landscape" },
-  { id: 11, src: "https://picsum.photos/seed/11/800/600", alt: "Photo 11", category: "street" },
-  { id: 12, src: "https://picsum.photos/seed/12/800/600", alt: "Photo 12", category: "portrait" },
+// Import your photos here
+// Example:
+// import photo1 from "../static/photos/landscape-1.jpg";
+// import photo2 from "../static/photos/street-1.jpg";
+
+// Add your photos to this array
+// Use the imported photo variable as the src
+const photos: { id: number; src: string; alt: string; category: string }[] = [
+  // Example entries (uncomment and modify when you add photos):
+  // { id: 1, src: photo1, alt: "Mountain Sunset", category: "landscape" },
+  // { id: 2, src: photo2, alt: "City Streets", category: "street" },
 ];
 
+// Update categories based on your photo types
 const categories = ["all", "landscape", "street", "portrait"];
 
 export function Photography() {
