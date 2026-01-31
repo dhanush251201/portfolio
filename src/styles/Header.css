@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    background-color: #333565;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    width: 100vw;
+    padding-left: 5vw;
+}
+
+.roboto-mono-400 {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
